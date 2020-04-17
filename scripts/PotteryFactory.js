@@ -23,3 +23,16 @@ export const PotteryFactory = (shape, weight, height) => {
         "height": height
     }
 }
+
+export const FirePottery = (potteryObject, kilnTemp) => {
+    //add two new properties to the pottery object
+    potteryObject.fired = true
+    potteryObject.cracked = false
+
+    //if kiln temperature is too high, the pottery will crack
+    if (kilnTemp > 2200) {
+        potteryObject.cracked = true
+    }
+
+    return potteryObject
+}

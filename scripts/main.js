@@ -1,5 +1,5 @@
-import { PotteryFactory } from "./PotteryFactory.js";
+import { PotteryFactory, FirePottery } from "./PotteryFactory.js";
 
-console.log(PotteryFactory("round", 1, 2))
-console.log(PotteryFactory("square", 2, 3))
-console.log(PotteryFactory("long", 1, 1))
+console.log(FirePottery(PotteryFactory("round", 1, 2), 9000))
+console.log(FirePottery(PotteryFactory("square", 2, 3), 2200))
+console.log(FirePottery(PotteryFactory("long", 1, 1), 2100))
