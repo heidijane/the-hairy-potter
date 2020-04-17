@@ -1,3 +1,5 @@
+import { getPottery } from "./pottery/potteryProvider.js";
 import { PotteryList } from "./pottery/PotteryList.js";
 
-PotteryList()
+getPottery()
+    .then(PotteryList)
