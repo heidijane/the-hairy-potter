@@ -1,0 +1,48 @@
+{
+    "pottery": [{
+            "id": 1,
+            "shape": "bottle vase",
+            "weight": "3",
+            "height": "3",
+            "fired": "true",
+            "cracked": "false",
+            "price": "40"
+        },
+        {
+            "id": 2,
+            "shape": "bowl",
+            "weight": "2",
+            "height": ".5",
+            "fired": "true",
+            "cracked": "false",
+            "price": "40"
+        },
+        {
+            "id": 3,
+            "shape": "urn",
+            "weight": "10",
+            "height": "2",
+            "fired": "true",
+            "cracked": "false",
+            "price": "40"
+        },
+        {
+            "id": 4,
+            "shape": "cylinder vase",
+            "weight": "1",
+            "height": "2",
+            "fired": "true",
+            "cracked": "false",
+            "price": "20"
+        },
+        {
+            "id": 5,
+            "shape": "botanical jar",
+            "weight": "5",
+            "height": "3",
+            "fired": "true",
+            "cracked": "false",
+            "price": "40"
+        }
+    ]
+}
