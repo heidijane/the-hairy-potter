@@ -1,1 +1,3 @@
-import "./PotteryFactory.js";
+import { PotteryList } from "./pottery/PotteryList.js";
+
+PotteryList()

@@ -6,7 +6,7 @@
 */
 
 //empty array to store pottery inventory
-const potteryToSell = []
+export const potteryToSell = []
 
 
 //generator function to create an ID
@@ -19,7 +19,7 @@ function* autoIncrement() {
 //assign the generator function to a variable
 let potteryId = autoIncrement()
 
-export const PotteryFactory = (shape, weight, height) => {
+const PotteryFactory = (shape, weight, height) => {
 
     return {
         "id": potteryId.next().value,
@@ -29,7 +29,7 @@ export const PotteryFactory = (shape, weight, height) => {
     }
 }
 
-export const FirePottery = (potteryObject, kilnTemp) => {
+const FirePottery = (potteryObject, kilnTemp) => {
     //add two new properties to the pottery object
     potteryObject.fired = true
     potteryObject.cracked = false
@@ -43,7 +43,7 @@ export const FirePottery = (potteryObject, kilnTemp) => {
 }
 
 //determine if a piece of pottery can be sold and if so, give it a price and push it into our sellable pottery array
-export const assessPottery = (potteryObject, potteryToSellArray) => {
+const assessPottery = (potteryObject, potteryToSellArray) => {
     if (potteryObject.cracked === false) {
         if (potteryObject.weight >= 3) {
             potteryObject.price = 40
