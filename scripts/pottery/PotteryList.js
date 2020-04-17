@@ -8,7 +8,7 @@
 import { potteryToSell } from "./PotteryFactory.js";
 import { Pot } from "./Pot.js";
 
-const contentTarget = document.querySelector("#container")
+const contentTarget = document.querySelector("#inventory")
 
 export const PotteryList = () => {
     contentTarget.innerHTML = potteryToSell.map(pot => Pot(pot)).join('')

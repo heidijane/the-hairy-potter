@@ -1,0 +1,16 @@
+#inventory {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.pot {
+    max-width: 300px;
+    min-width: 150px;
+    border: 1px solid #c08463;
+    background-color: #dcaf97;
+    color: #352920;
+    padding: 1em;
+    margin: 1em;
+}
